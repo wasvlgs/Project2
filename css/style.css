@@ -1,0 +1,787 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&display=swap');
+
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/bg-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0% 5%;
+    background-color: #424242;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+header a img{
+    width: 60px;
+    height: 60px;
+    margin-right: 150px;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    color: white;
+    gap: 30px;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: 0.4s;
+}
+header ul li a:hover{
+    color: #E9BD8C;
+}
+
+
+
+.homeContent{
+    width: 50%;
+    height: 86%;
+    padding: 150px 0 0 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5%;
+}
+.homeContent h3{
+    color:#E9BD8C;
+}
+.homeContent h2{
+    font-family: "Sansita Swashed", system-ui;
+    color: white;
+    font-size: 4rem;
+    font-weight: 400;
+}
+.buttonsHome{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15%;
+}
+.buttonsHome button{
+    min-width: 150px;
+    width: 50%;
+    height: 45px;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color:#E9BD8C;
+    background-color: transparent;
+    cursor: pointer;
+}
+.buttonsHome button:hover{
+    color: #ecaa5f;
+}
+.buttonsHome a:first-of-type button {
+    background-color: #933C24;
+    margin-right: 10px;
+    color: white;
+    border-radius: 8px;
+    transition: all 0.4s;
+}.buttonsHome a:first-of-type:hover  button{
+    background-color: #6b230f;
+}
+
+
+
+footer{
+    padding: 2% 5%;
+    width: 100%;
+    background-image: url("../img/bg-footer.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 400px;
+}
+footer .footerTop{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #e9bd8d41;
+}
+footer .footerTop img{
+    width: 100px;
+    height: 100px;
+}
+
+footer .footerTop .socialMedia{
+    display: flex;
+    color: #E9BD8C;
+    align-items: center;
+    gap: 15px;
+    margin-right:10%;
+}
+footer .footerTop .socialMedia h2{
+    font-size: 1.2rem;
+}
+footer .footerTop .socialMedia a{
+    text-decoration: none;
+    color: #E9BD8C;
+}
+footer .footerTop .socialMedia a i{
+    font-size: 2rem;
+}
+
+
+footer .footerContent{
+    width: 100%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2% 0%;
+}
+footer .footerContent h2{
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #E9BD8C;
+}
+footer .footerContent ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+footer .footerContent ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+footer .footerContent ul li .item{
+    width: 100%;
+    max-width: 300px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+footer .footerContent ul li .item h2{
+    color: white;
+    font-size: 1.3rem;
+}
+footer .footerContent ul li .item h3{
+    color: #E9BD8C;
+    font-size: 1rem;
+}
+footer .footerContent ul li .item img{
+    width: 35%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+footer .footerBottom{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+footer .footerBottom span{
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.493);
+}
+
+
+.topProducts{
+    width: 100%;
+    margin-top: 70px;
+    padding: 2% 4%;
+}
+.topProducts .titleType{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.topProducts .titleType h1{
+    font-family: "Sansita Swashed", system-ui;
+    font-size: 3rem;
+}
+
+
+.topProducts .products{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    gap: 20px;
+}
+.topProducts .products .product{
+    height: 300px;
+    width: 260px;
+    background-image: url("../img/products/bg-products.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: white;
+}
+
+
+.products .product img{
+    width: 50%;
+    height: 40%;
+}
+.products .product .infoProduct{
+    width: 100%;
+    height: 10%;
+    margin-top: 20%;
+    display: flex;
+    align-items: center;
+}
+.products .product .infoProduct h2{
+    font-size: 1.2rem;
+    width: 100%;
+}
+.products .product .infoProduct i{
+    font-size: 1rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 40px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+
+.products .product .contentProduct{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10%;
+}
+.products .product .contentProduct h3{
+    font-size: 1.2rem;
+}
+.products .product .contentProduct button{
+    width: 60px;
+    height: 35px;
+    background-color: #933C24;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s;
+}.products .product .contentProduct button:hover{
+    background-color: #af3310;
+}
+
+
+
+.banner{
+    width: 100%;
+    height: 350px;
+    background-image: url("../img/topProduct.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: 60px 0px 100px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.banner .bannerContent{
+    width: 100%;
+    max-width: 400px;
+    height: 100% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.banner .bannerContent h2{
+    font-family: "Sansita Swashed", system-ui;
+    color: #933C24;
+    font-size: 2rem;
+}
+.banner .bannerContent p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    color: #5D5D5D;
+    width: 60%;
+    text-align: center;
+}
+.banner .bannerContent button{
+    width: 150px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #933C24;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.4s;
+}.banner .bannerContent button:hover{
+    background-color: #8f2b0f;
+}
+
+
+.topProducts .cathegory{
+    width: 100%;
+    border-bottom: 2px solid #D9D9D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+    font-weight: bold;
+    color: #5D5D5D;
+    margin-bottom: 80px;
+}
+.topProducts .cathegory li label{
+    cursor: pointer;
+}
+.topProducts .cathegory li:first-of-type div,.topProducts .cathegory li:hover div{
+    width: 100%;
+    height: 4px;
+    border-radius: 10px;
+    background-color: #933C24;
+    position: relative;
+    top: 3px;
+}
+
+.exploreProduct{
+    padding: 0 !important;
+    height: 300px !important;
+    width: 270px !important;
+    transition: all 0.4s;
+    cursor: pointer;
+    background-image: none !important;
+}
+.exploreProduct:hover{
+    transform: scale(105%);
+}
+.products .exploreProduct .exploreProducts{
+    width: 100%;
+    height: 80%;
+}
+.products .exploreProduct div{ 
+    width: 100%;
+    height:20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+}
+
+
+.bannerExplore{
+    background-image: url("../img/ExploreMore.png") !important;
+}
+
+
+
+.cathegoryTitle{
+    width: 100%;
+    height: 100px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-family: "Sansita Swashed", system-ui;
+    font-size: 2rem;
+    color: #933C24;
+}
+
+
+
+.products .menuProduct{
+    width: 260px !important;
+    height: 260px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black !important; 
+    background-image: none !important;
+    cursor: pointer;
+    transition: all 0.4s;
+}.products .menuProduct:hover{
+    transform: scale(105%);
+}
+.products .menuProduct img{
+    width: 60%;
+    height: 60%;
+}
+
+
+.products .menuProduct2{
+    width: 260px !important;
+    height: 260px !important;
+    background-image: none !important;
+    cursor: pointer;
+    transition: all 0.4s;
+}.products .menuProduct2:hover{
+    transform: scale(105%);
+}
+
+.products .menuProduct2 img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.contactSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topProducts form{
+    width: 100%;
+    max-width: 700px;
+    height: 100%;
+    max-height: 700px;
+    background-color: #F9F9F9;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 40px 20px 40px;
+    border: 10px;
+    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.252);
+    margin-bottom: 40px;
+}
+.topProducts form .inputs{ 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.topProducts form input,textarea{
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: black;
+    padding-left: 2%;
+}
+.topProducts form > input, textarea{
+    width: 100%;
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.252);
+    font-family: "Sansita Swashed", system-ui;
+
+}
+.topProducts form div input{
+    width: 45%;
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.252);
+    font-family: "Sansita Swashed", system-ui;
+
+}
+
+.topProducts form textarea{
+    height: 150px;
+    min-height: 150px;
+    max-height: 150px;
+    min-width: 100%;
+    max-width: 100%;
+    padding: 2%;
+}
+
+.topProducts form .send{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+}
+.topProducts form .send button{
+    width: 75px;
+    height: 30px;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background: linear-gradient(to left, #742506, #DA450C);
+    font-size: 1.2rem;
+    font-family: "Sansita Swashed", system-ui;
+}
+
+
+.topProducts .contentAbout{
+    width: 60%;
+}
+.topProducts .contentAbout .rowContent{
+    width: 100%;
+    height: 300px;
+    display: flex;
+}
+.topProducts .contentAbout .rowContent .textAbout{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+.topProducts .contentAbout .rowContent .textAbout .lineTop{
+    width: 70%;
+}
+.topProducts .contentAbout .rowContent .textAbout .lineTop div{
+    width: 100px;
+    height: 4px;
+    background-color: #C85619;
+}
+.topProducts .contentAbout .rowContent .textAbout p{
+    width: 70%;
+    font-weight: 600;
+}
+.topProducts .contentAbout .rowContent .imageAbout{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.topProducts .contentAbout .rowContent .imageAbout img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+@media (max-width:1000px) {
+    .topProducts .contentAbout {
+        width: 80%;
+    }
+}
+
+@media (max-width:900px) {
+    .homeContent {
+        width: 85%;
+        padding: 15% 0 0 6%;
+    }
+    footer .footerContent {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    footer .footerContent ul {
+        font-size: 1rem;
+    }
+    footer .footerContent ul li .item {
+        max-width: 270px;
+    }
+    footer .footerContent ul li .item h3 {
+        font-size: 0.9rem;
+    }
+    footer .footerContent ul li .item h2 {
+        font-size: 1.1rem;
+    }
+    footer .footerContent ul li .item img {
+        width: 24%;
+        height: 68%;
+    }
+    footer .footerContent ul li .item {
+        max-width: 250px;
+    }
+    .topProducts .products {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 280px));
+    }
+}
+
+@media (max-width:850px) {
+    .homeContent {
+        width: 85%;
+        padding: 15% 0 0 6%;
+    }
+    .topProducts .contentAbout {
+        width: 90%;
+    }
+}
+
+@media (max-width:700px) {
+    .topProducts form .inputs{
+        flex-direction: column;
+        justify-content: start;
+        gap: 20px;
+    }
+    .topProducts form div input {
+        width: 100%;
+    }
+    .topProducts .contentAbout {
+        width: 100%;
+    }
+}
+@media (max-width:650px) {
+    header ul li a {
+        font-size: 1rem;
+    }
+    header ul {
+        gap: 13px;
+    }
+    header a img{
+        margin-right: 75px;
+    }
+    footer .footerContent {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+@media (max-width:600px) {
+    .topProducts .contentAbout .rowContent {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .topProducts .contentAbout .rowContent .imageAbout {
+        width: 100%;
+    }
+    .topProducts .contentAbout .rowContent .textAbout {
+        width: 100%;
+    }
+    .topProducts .contentAbout {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 60px;
+    }
+    #rowMiddle{
+        flex-direction: column-reverse;
+        margin-top: 150px;
+    }
+    .topProducts .cathegory {
+        flex-wrap: wrap;
+        gap: 40px;
+        margin-bottom: 80px;
+    }
+}
+@media (max-width:500px) {
+    header {
+        height: 113px;
+        justify-content: space-evenly;
+        padding: 0%;
+        flex-direction: column;
+    }
+    header a img {
+        margin-right: 0;
+    }
+    header > a {
+        text-align: center;
+    }
+    .homeContent {
+        width: 100%;
+        padding: 100px 0 0 0;
+        align-items: center;
+        gap: 5%;
+    }
+    .buttonsHome {
+        width: 100%;
+        justify-content: center;
+        margin-top: 70px;
+        gap: 10px;
+    }
+    .homeContent h2 {
+        font-size: 3rem;
+    }
+    .buttonsHome button {
+        min-width: 120px;
+        font-size: 1.1rem;
+    }
+    footer .footerContent {
+        grid-template-columns: 1fr;
+    }
+    footer .footerContent ul {
+        padding-left: 20px;
+    }
+    footer .footerTop img {
+        width: 80px;
+        height: 80px;
+    }
+    footer .footerTop .socialMedia {
+        gap: 10px;
+        margin-right: 2%;
+    }
+    footer .footerTop .socialMedia h2 {
+        font-size: 1rem;
+    }
+    footer .footerTop .socialMedia a i {
+        font-size: 1.5rem;
+    }
+    .topProducts form {
+        padding: 20px 20px 10px 20px;
+    }
+}
+@media (max-width:400px) {
+    footer .footerTop {
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    footer .footerTop .socialMedia {
+        margin-right: 0;
+        margin-bottom: 2%;
+    }
+    span {
+        font-size: 0.8rem;
+    }
+    .topProducts .titleType h1 {
+        font-size: 2.5rem;
+    }
+    .cathegoryTitle h3{
+        font-size: 1.5rem;
+    }
+    .cathegoryTitle {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .topProducts form {
+        padding: 10px 10px 5px 10px;
+    }
+    #rowMiddle{
+        flex-direction: column-reverse;
+        margin-top: 400px;
+    }
+    .topProducts .contentAbout .rowContent {
+        gap: 80px;
+    }
+    .topProducts .contentAbout {
+        margin-bottom: 150px;
+    }
+}
