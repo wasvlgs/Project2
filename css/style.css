@@ -381,14 +381,14 @@ footer .footerBottom span{
 .topProducts .cathegory li label{
     cursor: pointer;
 }
-.topProducts .cathegory li:first-of-type div,.topProducts .cathegory li:hover div{
+/* .topProducts .cathegory li:first-of-type div,.topProducts .cathegory li:hover div{
     width: 100%;
     height: 4px;
     border-radius: 10px;
     background-color: #933C24;
     position: relative;
     top: 3px;
-}
+} */
 
 .exploreProduct{
     padding: 0 !important;
@@ -583,6 +583,30 @@ footer .footerBottom span{
     height: 180px;
     border-radius: 50%;
 }
+
+
+
+
+.topProducts .explores{
+    display: none;
+}
+
+.cathegory:has(#cake:checked) ~ .resultat1, .cathegory:has(#Muffins:checked) ~ .resultat2,  .cathegory:has(#Croissant:checked) ~ .resultat3,   .cathegory:has(#Bread:checked) ~ .resultat4,  .cathegory:has(#Tart:checked) ~ .resultat5, .cathegory:has(#Favorite:checked) ~ .resultat6  {
+    display: grid;
+}
+#cake:checked ~ div,#Muffins:checked ~ div,#Croissant:checked ~ div, #Bread:checked ~ div,  #Tart:checked ~ div, #Favorite:checked ~ div  {
+    width: 100%;
+    height: 4px;
+    border-radius: 10px;
+    background-color: #933C24;
+    position: relative;
+    top: 3px;
+}
+
+
+
+
+
 
 @media (max-width:1000px) {
     .topProducts .contentAbout {
