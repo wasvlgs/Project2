@@ -588,7 +588,7 @@ footer .footerBottom span{
 
 
 .topProducts .explores{
-    display: none;
+    display: none !important;
 }
 
 .cathegory:has(#cake:checked) ~ .resultat1, .cathegory:has(#Muffins:checked) ~ .resultat2,  .cathegory:has(#Croissant:checked) ~ .resultat3,   .cathegory:has(#Bread:checked) ~ .resultat4,  .cathegory:has(#Tart:checked) ~ .resultat5, .cathegory:has(#Favorite:checked) ~ .resultat6  {
